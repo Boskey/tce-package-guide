@@ -1,0 +1,9 @@
+name: tce package guide
+
+modules:
+    activate:
+    - overview
+    - exercises/01-tanzu-repository
+    - exercises/02-install-packages
+    - exercises/03-update-packages
+    - summary
