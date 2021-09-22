@@ -1,0 +1,13 @@
+apiVersion: training.eduk8s.io/v1alpha1
+kind: TrainingPortal
+metadata:
+  name: tce-worksops
+spec:
+  portal:
+    registration:
+      type: anonymous
+  workshops:
+  - name: tce-package-guide
+    capacity: 3
+    expires: 60m
+    orphaned: 5m

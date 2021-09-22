@@ -1,0 +1,12 @@
+modules:
+    overview:
+        name: Tanzu Community Edition Package Management Overview
+    exercises/01-tanzu-repository:
+        name: Tanzu Package Repository
+    exercises/02-install-packages:
+        name: Installing Packages
+    exercises/03-update-packages:
+        name: Update Packages
+    summary:
+        name: Summary
+        exit_sign: Finish
