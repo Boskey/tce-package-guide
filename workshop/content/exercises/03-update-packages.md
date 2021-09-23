@@ -40,3 +40,4 @@ This would have updated cert-manager to version `1.5.1`. Let's confirm
 tanzu package installed list --namespace {{session_namespace}}
 ```
 
+NOTE: You might see an error message saying `Reconcile Failed...` . This is because there are other users going through the tutorial and might have installed another version of cert-manager on the cluster.

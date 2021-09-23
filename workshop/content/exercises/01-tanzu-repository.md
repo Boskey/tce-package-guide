@@ -21,7 +21,7 @@ List the Packages Repositories added to `Tanzu CLI`
 tanzu package repository list --namespace {{session_namespace}}
 ```
 
-Take a look at the packages available via Repository
+Take a look at the packages available via Repository, give the above command ~30 seconds to reconcile and make sure the status says `Reconcile Succeeded` 
 
 ```execute
 tanzu package available list --namespace {{session_namespace}}
