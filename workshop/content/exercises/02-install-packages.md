@@ -30,3 +30,4 @@ tanzu package installed list --namespace {{session_namespace}}
 
 NOTE: You might see an error message saying `Reconcile Failed...` . This is because there are other users going through the tutorial and might have installed another version of cert-manager on the cluster.
 
+You can similarly select a package from the available list and use `tanzu package install` command to install additional packages.
