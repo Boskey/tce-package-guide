@@ -1,18 +1,20 @@
 apiVersion: training.eduk8s.io/v1alpha1
 kind: TrainingPortal
 metadata:
-  name: tce-worksops
+  name: tce-workshops
 spec:
+  analytics:
+    webhook:
+      url: https://tanzu-dev-portal.netlify.app/developer/workshop-status?token=iFxXtF9Max9FTzasoCFboJ
   portal:
-    registration:
-      type: anonymous
+    sessions:
+      maximum: 200
+    reserved: 20
   workshops:
-  - name: tce-package-guide
-    capacity: 3
-    expires: 60m
-    orphaned: 5m
   - name: tce-dev-guide
-    capacity: 3
-    expires: 60m
+    expires: 20m
+    orphaned: 5m
+  - name: tce-package-guide
+    expires: 20m
     orphaned: 5m
   

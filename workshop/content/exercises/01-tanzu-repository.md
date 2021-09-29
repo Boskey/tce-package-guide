@@ -13,15 +13,19 @@ Let's add a Package Repository
 tanzu package repository add tce-repo --url projects.registry.vmware.com/tce/main:stable --namespace {{session_namespace}}
 ```
 
-This command tells `Tanzu CLI` where the package Repository is via the `URL` parameter. Once the Package Repository is added, it may take a minute to reconcile meta-data. 
+This command tells `Tanzu CLI` where the package Repository is via the `URL` parameter. Once the Package Repository is added, it may take a minute to reconcile meta-data.
+
+
 
 List the Packages Repositories added to `Tanzu CLI`
+
+**NOTE: Give the above command ~30 seconds to reconcile and make sure the status says `Reconcile Succeeded` before proceeding to further steps.**
 
 ```execute
 tanzu package repository list --namespace {{session_namespace}}
 ```
-
 Take a look at the packages available via Repository, give the above command ~30 seconds to reconcile and make sure the status says `Reconcile Succeeded` 
+
 
 ```execute
 tanzu package available list --namespace {{session_namespace}}
