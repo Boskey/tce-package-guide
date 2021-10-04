@@ -14,20 +14,19 @@ Fetch the version of the `Cert-Manager` available to install.
 tanzu package available list cert-manager.community.tanzu.vmware.com  --namespace {{session_namespace}}
 ```
 
-Install Cert-Manager
+To install Cert-Manager, run the following commad. 
+Note: We are not going to run the below command since this is a shared cluster and Cert-Manger can be installed only once. 
 
-```execute
-tanzu package install cert-manager --package-name cert-manager.community.tanzu.vmware.com --namespace {{session_namespace}}  --version 1.3.1 --wait=false
+```
+tanzu package install cert-manager --package-name cert-manager.community.tanzu.vmware.com  --version 1.3.1 --wait=false
 ```
 
-The above command would have installed `Cert-Manager`
+The above command was used to install `Cert-Manager`
 
 Let's list the packages installed.
 
 ```execute
-tanzu package installed list --namespace {{session_namespace}}
+tanzu package installed list
 ```
-
-NOTE: You might see an error message saying `Reconcile Failed...` . This is because there are other users going through the tutorial and might have installed another version of cert-manager on the cluster.
 
 You can similarly select a package from the available list and use `tanzu package install` command to install additional packages.
