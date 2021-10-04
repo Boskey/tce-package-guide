@@ -19,7 +19,7 @@ This command tells `Tanzu CLI` where the package Repository is via the `URL` par
 
 List the Packages Repositories added to `Tanzu CLI`
 
-**NOTE: Give the above command ~30 seconds to reconcile and make sure the status says `Reconcile Succeeded` before proceeding to further steps.**
+**NOTE: The command below can take ~1-2 minutes to reconcile and make sure the status says `Reconcile Succeeded` before proceeding to further steps.**
 
 ```execute
 tanzu package repository list --namespace {{session_namespace}}
