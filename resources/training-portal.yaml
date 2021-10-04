@@ -10,6 +10,18 @@ spec:
     sessions:
       maximum: 200
     reserved: 20
+    theme:
+      frame:
+        ancestors:
+        - https://tanzu.vmware.com
+        - https://*.netlify.app
+        - https://netlify.app
+        - https://localhost
+        - https://localhost:1313
+        - http://localhost
+        - http://localhost:1313
+        - https://localhost:8443
+        - https://*.tce-vmworld.tanzu-dev.com
   workshops:
   - name: tce-dev-guide
     expires: 20m
