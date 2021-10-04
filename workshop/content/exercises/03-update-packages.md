@@ -17,27 +17,23 @@ Let's update the application `Cert-Manager`
 Let's look at the version of Cert-Manager we just installed. 
 
 ```execute
-tanzu package installed list --namespace {{session_namespace}}
+tanzu package installed list 
 ```
 The current version of cert-manager is at `1.3.1`
 
 Let's take a look at the available versions of Cert-Manager
 
 ```execute
-tanzu package available list cert-manager.community.tanzu.vmware.com --namespace {{session_namespace}}
+tanzu package available list cert-manager.community.tanzu.vmware.com 
 ```
 
 You will notice that Cert-manger has more recent versions available to upgrade.
 Let's upgrade cert-manger ro version `1.5.1` from `1.3.1`
 
-```execute
-tanzu package installed update  cert-manager --version 1.5.1 --namespace {{session_namespace}} --wait=false
+Note: We are not running the below command cause this is a shared cluster.
+
+```
+tanzu package installed update  cert-manager --version 1.5.1 --wait=false
 ```
 
-This would have updated cert-manager to version `1.5.1`. Let's confirm
-
-```execute
-tanzu package installed list --namespace {{session_namespace}}
-```
-
-NOTE: You might see an error message saying `Reconcile Failed...` . This is because there are other users going through the tutorial and might have installed another version of cert-manager on the cluster.
+This would have updated cert-manager to version `1.5.1`. However, since this is a shared cluster other users might have updated Cert-manger.
